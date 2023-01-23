@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid layout</title>
+
+    <!-- css style -->
+    <style>
+        header{
+            grid-area: header;
+            background:gray;
+            padding: 10px;
+        }
+
+        menu{
+            background:gray;
+            grid-area: menu;
+            padding: 10px;
+        }
+
+        main{
+            grid-area: main;
+            background: gray;
+            padding: 10px;
+        }
+
+        aside{
+            grid-area: aside;
+            background: gray;
+            padding: 10px;
+        }
+
+        .ads{
+            grid-area: ads;
+            background: gray;
+            padding: 10px;
+        }
+
+        footer{
+            grid-area: footer;
+            background: gray;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* layout area */
+        body{
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: repeat(6, 2fr);
+            grid-template-areas: 
+            "header header header header header header"
+            "menu main main main aside aside"
+            "menu main main main aside aside"
+            "menu main main main aside aside"
+            "menu main main main ads ads"
+            "footer footer footer footer footer footer"
+            ;
+            margin: 5px;
+        }
+
+        /* list style none */
+        ul li{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+   
+
+    <!-- header section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- menu sidebar section-->
+    <menu>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Login</a></li>
+        </ul>
+    </menu>
+
+    <!-- main section -->
+    <main>
+        <h1>Grid layout using venilla css on body</h1>
+        <article>
+            <h1>Article 1</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A veritatis distinctio similique facere libero expedita omnis voluptas architecto nostrum! Ipsum, eligendi? Voluptate sed veritatis, quo voluptatum cumque sequi blanditiis vero ex modi quasi asperiores libero voluptas repellat! Perferendis illo, explicabo fuga dolore perspiciatis laudantium, amet incidunt assumenda ratione, ipsam exercitationem!</p>
+        </article>
+
+        <article>
+            <h1>Article 2</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A veritatis distinctio similique facere libero expedita omnis voluptas architecto nostrum! Ipsum, eligendi? Voluptate sed veritatis, quo voluptatum cumque sequi blanditiis vero ex modi quasi asperiores libero voluptas repellat! Perferendis illo, explicabo fuga dolore perspiciatis laudantium, amet incidunt assumenda ratione, ipsam exercitationem!</p>
+        </article>
+    </main>
+
+    <!-- aside section -->
+    <aside>
+        <h1>aside bar</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, asperiores?</p>
+    </aside>
+    
+    <!-- ads section -->
+    <div class="ads">
+        <h1>sponsors</h1>
+        <ul>
+            <li><a href="">Google</a></li>
+            <li><a href="">Youtube</a></li>
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Apple</a></li>
+        </ul>
+    </div>
+
+    <!-- footer section -->
+    <footer>
+        <h1>&copy;Zehad Sarkar 2023</h1>
+    </footer>
+
+</body>
+</html>
